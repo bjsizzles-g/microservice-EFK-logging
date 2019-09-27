@@ -21,8 +21,6 @@ services:
         - ELASTICSEARCH_PASSWORD=changeme
         - xpack.security.enabled=false
         - path.data=/usr/share/elasticsearch/data
-    volumes:
-      - ./esdata:/usr/share/elasticsearch/data
 
   kibana:
     image: docker.elastic.co/kibana/kibana:6.7.0
